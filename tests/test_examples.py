@@ -11,7 +11,7 @@ import sys
 
 
 example_scripts = glob.glob("examples/**/*.py", recursive=True)
-example_exclusion_strings = [".converted.py", "generate_json_and_scripts.py"]
+example_exclusion_strings = [".reconstructed.py", "generate_json_and_scripts.py"]
 
 # NOTE: xfail mark can be removed if/when a full TimeInterval or
 # placeholder class reaches main psyneulink branch. This is only a
