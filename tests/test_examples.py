@@ -78,4 +78,6 @@ def test_example(script, tmpdir):
 
     os.chdir(tmpdir)
 
+    sys.path.append('.')
     runpy.run_path(os.path.basename(script), run_name="__main__")
+    sys.path.pop()
